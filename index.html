@@ -1,0 +1,79 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>欢迎光临</title>
+  <style>
+    /* 假设你在这里添加了一些 CSS 样式来设计导航栏 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #top-navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #side-navbar {
+      background-color: #f4f4f4;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+      padding-top: 50px;
+      /* 用于避免导航栏部分被遮挡 */
+    }
+
+    #side-navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #side-navbar li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #side-navbar li:hover {
+      background-color: #ddd;
+    }
+
+    #content {
+      margin-left: 200px;
+      /* 要和侧边导航栏的宽度一致 */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="top-navbar">
+    <h1>顶部导航栏</h1>
+    <!-- 在这里添加顶部导航栏的链接或其他内容 -->
+  </div>
+  <div id="side-navbar">
+    <ul>
+      <li><a href="#">导航项 1</a></li>
+      <li><a href="#">导航项 2</a></li>
+      <li><a href="#">导航项 3</a></li>
+      <!-- 在这里添加侧边导航栏的链接 -->
+    </ul>
+  </div>
+  <div id="content">
+    <p id="info"></p>
+  </div>
+</body>
+<script src="./renderer.js"></script>
+
+</html>
